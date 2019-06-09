@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3 Times</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>D3 Times</h1><br>
+        <button type="submit" onClick="refreshPage()">Reset</button>
+        <script>
+          function refreshPage() {
+            window.location.reload();
+          } 
+        </script>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12  col-md-9">
+          <div id="scatter">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div style="width:33.3%;padding:0 10px 0 0;float:left; color:white;">
+          <h4>Obesity</h4>
+          There does not appear to be a correlation with poverty and obesity.
+          The bulk of obese individuals in the United States have a median age between 34 - 42.
+          Median Household income does seem to affect obesity rates. As the median household income increases,
+          the prevalence of obesity narrows. In Texas, there seems to be a strong correlation between obesity 31.9%
+          and lacking healthcare 24.9%.
+        </div>
+        <div style="width:33.3%;padding:0 10px 0 0;float:left; color:white;">
+          <h4>Smoking</h4>
+          The median age for smokers is between 36 and 44 and among households with a median household income
+          between $45K and $60k though an incline is noticed within prevalence of smokers in lower income households.
+          There does not seem to be a connection between smoking and healthcare except in Massachusetts where only
+          4.6% of the population is without healthcare and only 14.7% are smokers. The inverse is Louisiana where
+          18.7% lack healthcare while 24% are smokers.<br>
+        </div>
+        <div style="width:33.3%;padding:0 10px 0 0;float:left; color:white;">
+          <h4>Healthcare</h4>
+          There did not seem to be a correlation with poverty and the lack of healthcare in 2014. The bulk
+          of population that is lacking healthcare is between the median age of 36 and 42. There seems to be a
+          correlation between healthcare and median household income where the higher the median household income,
+          the less percentage of population without healthcare.<br><br>
+        </div>
+        <div style="clear:both;"></div>
+        <br>
+        <div style="color:white;">
+          <p><i>(Data is based on 2014 ACS 1-year estimates obtained from<a
+                href="https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml"> USCensus
+                factfinder)</i></a></p>
+        </div>
+        </b>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Footer-->
+  <div id="footer">
+    <!-- <p>The Coding Boot Camp&copy;2019</p> -->
+    <a href="https://afr5057.github.io/" color: #64a19d>Amy Reynolds 2019 GitHub</a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="assets/js/app3.js"></script>
+
+</body>
+
+</html>
